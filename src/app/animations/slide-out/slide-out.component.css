@@ -1,0 +1,26 @@
+li {
+  list-style: none;
+  margin-top: 0.5rem;
+  background-color: royalblue;
+  color: white;
+  border-radius: 5px;
+  padding: 0.25rem;
+  width: 200px;
+  display: inline;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  align-self: flex-start;
+  margin: 1rem;
+}

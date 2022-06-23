@@ -1,0 +1,11 @@
+<div [@loadList] class="list-container">
+  <ul [@listAnimation]="items.length">
+    <li
+      *ngFor="let item of items; trackBy: itemTrackById"
+      (click)="itemClicked(item.id)"
+    >
+      {{ item.text }}
+    </li>
+  </ul>
+  <button (click)="addItem()">Add item</button>
+</div>

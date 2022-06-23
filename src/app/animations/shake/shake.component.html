@@ -1,0 +1,8 @@
+<div [@loadList] class="list-container">
+  <ul [@shake]="shakingState">
+    <li *ngFor="let item of items">
+      {{ item.text }}
+    </li>
+  </ul>
+  <button (click)="shakeIt()">Shake it</button>
+</div>

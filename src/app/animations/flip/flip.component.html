@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="card" [@cardFlip]="cardState">
+    <div class="face front">
+      <div class="inputs">
+        <input type="text" />
+        <input type="text" />
+      </div>
+      <div class="actions">
+        <button (click)="flip()">FLIP</button>
+      </div>
+    </div>
+    <div class="face back">
+      <button (click)="flip()">FLIP BACK</button>
+    </div>
+  </div>
+</div>
